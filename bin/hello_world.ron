@@ -1,0 +1,9 @@
+Program(
+	rows: [
+		Instruction(Mov(R(0), Register(PC))),
+		Instruction(Lea(R(0), Word(Integer(4)))),
+		Instruction(Load(R(1), R(0))),
+		Instruction(Halt),
+		Word(Integer(42)),
+	],
+)

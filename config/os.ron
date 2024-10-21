@@ -1,0 +1,18 @@
+MachineConfig(
+	size: 0x10000,
+	programs: {
+		// OS Kernel
+		0x0000: SourceFile("asm/kernel.asm"),
+		
+		// Standard library
+		0x0100: SourceFile("asm/memcpy.asm"),
+		0x0200: SourceFile("asm/malloc.asm"),
+		
+		// Actual program
+		0x0300: SourceFile("asm/hello_world.asm"),
+	},
+	interrupt_table: {
+		Fail: 0xFFFE,
+		Halt: 0xFFFF,
+	},
+)
