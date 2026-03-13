@@ -1,10 +1,5 @@
 # CerisEmu: A capability machine emulator
-
-Language-Based Security 2024
-
-Group 10
-
-Philipp Haas & Léo Gamboa dos Santos
+Based on the [Cerise capability machine](https://github.com/logsem/cerise) ([paper](https://dl.acm.org/doi/10.1145/3623510))
 
 ## Running the project
 - Make sure you have rust installed. We recommend installing it via [rustup](https://www.rust-lang.org/tools/install), and make sure you also install `cargo`.
